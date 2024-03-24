@@ -1,0 +1,84 @@
+{
+  "version": "eosio::abi/1.2",
+  "structs": [
+    {
+      "name": "Global",
+      "base": "",
+      "fields": [
+        {
+          "name": "id",
+          "type": "uint64"
+        },
+        {
+          "name": "poolName",
+          "type": "string"
+        },
+        {
+          "name": "refreshRateInHours",
+          "type": "int32"
+        }
+      ]
+    },
+    {
+      "name": "Pools",
+      "base": "",
+      "fields": [
+        {
+          "name": "poolNumber",
+          "type": "uint64"
+        },
+        {
+          "name": "poolName",
+          "type": "string"
+        },
+        {
+          "name": "refreshRateInHours",
+          "type": "int32"
+        }
+      ]
+    },
+    {
+      "name": "initpool",
+      "base": "",
+      "fields": [
+        {
+          "name": "from",
+          "type": "name"
+        },
+        {
+          "name": "poolName",
+          "type": "string"
+        }
+      ]
+    }
+  ],
+  "types": [],
+  "actions": [
+    {
+      "name": "initpool",
+      "type": "initpool",
+      "ricardian_contract": ""
+    }
+  ],
+  "tables": [
+    {
+      "name": "global",
+      "type": "Global",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    },
+    {
+      "name": "pools",
+      "type": "Pools",
+      "index_type": "i64",
+      "key_names": [],
+      "key_types": []
+    }
+  ],
+  "ricardian_clauses": [],
+  "variants": [],
+  "action_results": [],
+  "abi_extensions": [],
+  "error_messages": []
+}
